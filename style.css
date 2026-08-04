@@ -1,0 +1,769 @@
+/* ==========================
+   AI Solve - Style.css
+   Part 1
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f8ff;
+    color:#222;
+    overflow-x:hidden;
+}
+
+/* HEADER */
+
+header{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    background:#0f172a;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo i{
+    color:#38bdf8;
+    font-size:34px;
+}
+
+.logo h2{
+    color:white;
+    font-size:28px;
+}
+
+nav{
+    display:flex;
+    gap:35px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* HERO */
+
+.hero{
+
+    min-height:90vh;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:70px 8%;
+
+    gap:60px;
+
+}
+
+.hero-left{
+
+    flex:1;
+
+}
+
+.hero-left h1{
+
+    font-size:65px;
+
+    line-height:1.2;
+
+    color:#0f172a;
+
+}
+
+.hero-left span{
+
+    color:#2563eb;
+
+}
+
+.hero-left p{
+
+    margin-top:25px;
+
+    font-size:19px;
+
+    line-height:34px;
+
+    color:#555;
+
+}
+
+.start-btn{
+
+    display:inline-block;
+
+    margin-top:35px;
+
+    background:#2563eb;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:16px 40px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+.start-btn:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-4px);
+
+}
+
+/* HERO CARD */
+
+.hero-right{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.hero-card{
+
+    width:360px;
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:45px;
+
+    text-align:center;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+}
+
+.hero-card i{
+
+    font-size:70px;
+
+    color:#2563eb;
+
+}
+
+.hero-card h3{
+
+    margin-top:20px;
+
+    font-size:30px;
+
+}
+
+.hero-card p{
+
+    margin-top:12px;
+
+    color:#666;
+
+}
+
+/* FEATURES */
+
+.features{
+
+    padding:90px 8%;
+
+}
+
+.features h2{
+
+    text-align:center;
+
+    font-size:40px;
+
+    margin-bottom:60px;
+
+}
+
+.feature-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:35px;
+
+}
+
+.feature{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.3s;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+}
+
+.feature:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.feature i{
+
+    font-size:55px;
+
+    color:#2563eb;
+
+}
+
+.feature h3{
+
+    margin-top:20px;
+
+    margin-bottom:12px;
+
+}
+
+.feature p{
+
+    color:#666;
+
+    line-height:28px;
+
+}/* ==========================
+   AI Solve - Style.css
+   Part 2
+========================== */
+
+/* SUBJECTS */
+
+.subjects{
+    padding:90px 8%;
+    background:#eef5ff;
+}
+
+.subjects h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:60px;
+}
+
+.subject-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.subject-box{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    font-size:20px;
+    font-weight:600;
+    transition:.3s;
+    cursor:pointer;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.subject-box:hover{
+    background:#2563eb;
+    color:white;
+    transform:translateY(-6px);
+}
+
+/* SOLVER */
+
+.solver{
+    padding:100px 8%;
+}
+
+.solver h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.solver p{
+    text-align:center;
+    color:#666;
+    margin-bottom:45px;
+}
+
+.solver-card{
+    max-width:850px;
+    margin:auto;
+    background:white;
+    padding:45px;
+    border-radius:25px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+input[type=file]{
+    width:100%;
+    padding:18px;
+    border:2px dashed #2563eb;
+    border-radius:15px;
+    cursor:pointer;
+    background:#f8fbff;
+    margin-bottom:25px;
+}
+
+button{
+    border:none;
+    outline:none;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#solveBtn{
+    width:100%;
+    background:#2563eb;
+    color:white;
+    padding:18px;
+    font-size:18px;
+    border-radius:12px;
+    font-weight:600;
+}
+
+#solveBtn:hover{
+    background:#1d4ed8;
+}
+
+/* LOADING */
+
+.loading{
+    display:none;
+    text-align:center;
+    margin-top:35px;
+}
+
+.spinner{
+    width:55px;
+    height:55px;
+    border:5px solid #dbeafe;
+    border-top:5px solid #2563eb;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+    margin:auto;
+}
+
+@keyframes spin{
+
+    100%{
+        transform:rotate(360deg);
+    }
+
+}
+
+/* IMAGE PREVIEW */
+
+#previewContainer{
+    margin-top:30px;
+    text-align:center;
+}
+
+#previewContainer img{
+    max-width:100%;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+/* RESULT */
+
+#result{
+    margin-top:35px;
+    padding:25px;
+    border-radius:15px;
+    background:#f5f9ff;
+    border-left:6px solid #2563eb;
+    display:none;
+    line-height:1.8;
+    font-size:17px;
+    color:#222;
+    white-space:pre-wrap;
+}
+
+/* HOW IT WORKS */
+
+.how-it-works{
+    padding:90px 8%;
+    background:white;
+}
+
+.how-it-works h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:60px;
+}
+
+.steps{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:35px;
+}
+
+.step{
+    background:#f8fbff;
+    border-radius:20px;
+    padding:35px;
+    text-align:center;
+    transition:.3s;
+}
+
+.step:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.step-icon{
+    width:80px;
+    height:80px;
+    margin:auto;
+    border-radius:50%;
+    background:#2563eb;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.step-icon i{
+    color:white;
+    font-size:34px;
+}
+
+.step h3{
+    margin:20px 0 12px;
+}
+
+.step p{
+    color:#666;
+    line-height:28px;
+}/* ==========================
+   AI Solve - Style.css
+   Part 3
+========================== */
+
+/* ADVANTAGES */
+
+.advantages{
+    padding:90px 8%;
+    background:#eef5ff;
+}
+
+.advantages h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:60px;
+}
+
+.adv-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.adv-card{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    transition:.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.adv-card:hover{
+    transform:translateY(-8px);
+}
+
+.adv-card i{
+    font-size:55px;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.adv-card p{
+    color:#666;
+    line-height:28px;
+}
+
+/* FAQ */
+
+.faq{
+    padding:90px 8%;
+}
+
+.faq h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+.faq-item{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:20px;
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+}
+
+.faq-item h3{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.faq-item p{
+    color:#555;
+    line-height:28px;
+}
+
+/* CONTACT */
+
+.contact{
+    padding:90px 8%;
+    text-align:center;
+    background:#eef5ff;
+}
+
+.contact h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.contact p{
+    color:#666;
+    margin-bottom:30px;
+}
+
+.contact-btn{
+    background:#2563eb;
+    color:white;
+    padding:16px 40px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:17px;
+    transition:.3s;
+}
+
+.contact-btn:hover{
+    background:#1d4ed8;
+}
+
+/* FOOTER */
+
+footer{
+    background:#0f172a;
+    color:white;
+    padding:60px 8%;
+    text-align:center;
+}
+
+.footer-content h2{
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+.footer-content p{
+    color:#cbd5e1;
+    line-height:30px;
+}
+
+.footer-socials{
+    margin:30px 0;
+}
+
+.footer-socials a{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    width:45px;
+    height:45px;
+    margin:0 8px;
+    background:#1e293b;
+    color:white;
+    border-radius:50%;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-socials a:hover{
+    background:#2563eb;
+}
+
+footer hr{
+    margin:30px 0;
+    border:1px solid #334155;
+}
+
+.copyright{
+    color:#94a3b8;
+}
+
+/* LOADING OVERLAY */
+
+.loading-overlay{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.65);
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.loading-card{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    width:320px;
+}
+
+.spinner-large{
+    width:70px;
+    height:70px;
+    margin:auto;
+    border:6px solid #dbeafe;
+    border-top:6px solid #2563eb;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+}
+
+/* CAMERA MODAL */
+
+.camera-modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.8);
+    justify-content:center;
+    align-items:center;
+    z-index:9998;
+}
+
+.camera-box{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+}
+
+#camera{
+    width:100%;
+    max-width:500px;
+    border-radius:15px;
+}
+
+.camera-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:20px;
+}
+
+.camera-buttons button{
+    padding:14px 25px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    header{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-left h1{
+        font-size:45px;
+    }
+
+    .hero-card{
+        width:100%;
+        max-width:380px;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .hero-left h1{
+        font-size:36px;
+    }
+
+    .features h2,
+    .subjects h2,
+    .solver h2,
+    .advantages h2,
+    .faq h2,
+    .contact h2{
+        font-size:30px;
+    }
+
+    .solver-card{
+        padding:25px;
+    }
+
+    .camera-buttons{
+        flex-direction:column;
+    }
+
+}
